@@ -16,8 +16,13 @@ class PlaneTest {
     }
 
     @Test
-    void PlaneToCreateInstanceOfPlane()
-    {
+    void PlaneToCreateInstanceOfPlane(){
         assertThat(plane, instanceOf(Plane.class));
+    }
+
+    @Test
+    void PlaneToLandAndHaveStatusLanded(){
+        plane.land();
+        assertEquals("Plane has landed", plane.getStatus());
     }
 }
