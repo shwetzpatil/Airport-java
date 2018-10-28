@@ -1,3 +1,5 @@
+package com.makers.airport_challenge;
+
 public class Plane {
 
     private String status;
